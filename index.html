@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        
+        <!-- Buttons for "Get Weather" and "Find Location" -->
+        <div id="button-container">
+            <button id="get-weather">Get Weather</button>
+            <button id="find-location">Find Location</button>
+        </div>
+        
+        <!-- City Input and Suggestions -->
+        <div>
+            <input type="text" id="city-input" placeholder="Enter city name" />
+            <ul id="city-suggestions"></ul>
+        </div>
+        
+        <!-- Weather Details -->
+        <div id="weather-details" style="display: none;">
+            <h2 id="city-name"></h2>
+            <div id="temperature"></div>
+            <div id="description"></div>
+            <img id="weather-icon" src="" alt="Weather Icon" />
+            <div id="sunrise"></div>
+            <div id="sunset"></div>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error-message" style="display: none;"></div>
+
+        <!-- Clock -->
+        <div id="clock"></div>
+    </div>
+    
+    <script src="renderer.js"></script>
+</body>
+</html>
